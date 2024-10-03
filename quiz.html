@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz MAGI</title>
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="img/Gray and Black Simple Studio Logo.png" height="100px">
+        <h1>Loja de Móveis</h1>
+        <h2>MAGI</h2>
+        
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="contato.html">Contato</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+
+
+    <section class="quiz-section" >
+    
+        <h1>Quiz: Conhecimento sobre Animais</h1>
+        <form id="quiz-form">
+            <h2>Pergunta 1: O que são móveis planejados?</h2>
+            <input type="radio" name="q1" value="A"
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            > A) Móveis fabricados em série<br>
+
+
+
+
+
+
+
+
+            <input type="radio" name="q1" value="B"> B) Móveis feitos sob medida para um espaço específico<br>
+            <input type="radio" name="q1" value="C"> C) Móveis de uso temporário<br>
+            <input type="radio" name="q1" value="D"> D) Móveis disponíveis apenas em lojas de departamento<br>
+
+            <h2>Pergunta 2: Qual é a principal vantagem dos móveis planejados?</h2>
+            <input type="radio" name="q2" value="A"> A) Eles são sempre mais baratos<br>
+            <input type="radio" name="q2" value="B"> B) Eles podem maximizar o uso do espaço disponível<br>
+            <input type="radio" name="q2" value="C"> C) Eles não requerem montagem<br>
+            <input type="radio" name="q2" value="D"> D)  Eles têm uma aparência genérica<br>
+
+            <h2>Pergunta 3: O que fazer ao encontrar um animal abandonado?</h2>
+            <input type="radio" name="q3" value="A"> A) Deixar lá<br>
+            <input type="radio" name="q3" value="B"> B) Tentar levar para casa<br>
+            <input type="radio" name="q3" value="C"> C) Contatar um resgate de animais<br>
+            <input type="radio" name="q3" value="D"> D) Ignorar<br>
+
+            <h2>Pergunta 4: Os móveis planejados são feitos geralmente de qual material?</h2>
+            <input type="radio" name="q4" value="A"> A) Plástico<br>
+            <input type="radio" name="q4" value="B"> B) MDF ou MDP<br>
+            <input type="radio" name="q4" value="C"> C) Papelão<br>
+            <input type="radio" name="q4" value="D"> D) Aço inoxidável<br>
+
+            <h2>Pergunta 5: Os móveis planejados podem incluir qual das opções a seguir?</h2>
+            <input type="radio" name="q5" value="A"> A) Armários embutidos<br>
+            <input type="radio" name="q5" value="B"> B) Móveis de plástico descartáveis<br>
+            <input type="radio" name="q5" value="C"> C) Móveis de papel<br>
+            <input type="radio" name="q5" value="D"> D) Móveis de loja de departamento<br>
+
+            <h2>Pergunta 6: Qual é um desvantagem dos móveis planejados?</h2>
+            <input type="radio" name="q6" value="A"> A) Eles podem ser mais caros do que os móveis prontos<br>
+            <input type="radio" name="q6" value="B"> B) Eles são sempre de baixa qualidade<br>
+            <input type="radio" name="q6" value="C"> C) Eles não podem ser personalizados<br>
+            <input type="radio" name="q6" value="D"> D) Eles não ocupam espaço<br>
+
+            <h2>Pergunta 7: Qual é o primeiro passo ao projetar móveis planejados?</h2>
+            <input type="radio" name="q7" value="A"> A) Escolher a cor<br>
+            <input type="radio" name="q7" value="B"> B) Medir o espaço disponível<br>
+            <input type="radio" name="q7" value="C"> C) Comprar os materiais<br>
+            <input type="radio" name="q7" value="D"> D) Encontrar um designer<br>
+
+            <h2>Pergunta 8: Os móveis planejados são adequados para qual tipo de ambiente?</h2>
+            <input type="radio" name="q8" value="A"> A)  Apenas para salas de estar<br>
+            <input type="radio" name="q8" value="B"> B) ISomente para escritórios<br>
+            <input type="radio" name="q8" value="C"> C) Para qualquer ambiente da casa ou escritório<br>
+            <input type="radio" name="q8" value="D"> D) Apenas para ambientes comerciais<br>
+
+            <h2>Pergunta 9: Qual é uma característica comum dos móveis planejados?</h2>
+            <input type="radio" name="q9" value="A"> A) Podem ser facilmente desmontados<br>
+            <input type="radio" name="q9" value="B"> B) Feitos com materiais de baixa durabilidade<br>
+            <input type="radio" name="q9" value="C"> C) São projetados para se encaixar perfeitamente em um espaço<br>
+            <input type="radio" name="q9" value="D"> D) Sempre têm o mesmo design<br>
+
+            <h2>Pergunta 10: Qual é uma tendência atual em móveis planejados?</h2>
+            <input type="radio" name="q10" value="A"> A) Móveis apenas em madeira escura<br>
+            <input type="radio" name="q10" value="B"> B) Móveis com múltiplas funções<br>
+            <input type="radio" name="q10" value="C"> C) Móveis sem nenhuma personalização<br>
+            <input type="radio" name="q10" value="D"> D) Móveis sempre na mesma cor<br>
+
+                
+            <button class="quiz_buttom" type="button" onclick="submitQuiz()" id="submit">Enviar</button>                
+        </form>
+
+        <audio id="venceusom" src="audios/venceu.mp3" preload="auto"></audio>
+        <audio id="selecionasom" src="audios/seleciona.mp3" preload="auto"></audio>
+        <audio id="perdeusom" src="audios/venceu.mp3" preload="auto"></audio>
+
+        <section id="result"></section>
+
+    </section>
+
+<script src="java.js"></script>
+
+</body>
+</html>

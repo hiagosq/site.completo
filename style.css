@@ -1,0 +1,650 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=DM+Serif+Display:ital@0;1&family=Oswald:wght@200..700&family=Share+Tech+Mono&display=swap');
+
+
+
+
+
+:root{
+    --cor1: #92CECA;
+    --cor2: #007970;
+    --cor3: #D0734B;
+    --cor4: #aa4e26;
+    --cor5: #000000;
+    --cor6: #FFE4D9;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* index */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor1);
+    text-align: justify;
+}
+
+header {
+    display: flex;
+    align-items: center; /* Alinha verticalmente ao centro */
+    background: #333;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+    max-width: 100vw;
+    height: 140px;
+}
+
+.logo{
+    width: 250px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-left: 100px; /* Espaço entre o h1 e a imagem */
+    margin-right: 450px;
+}
+
+button{
+    display: flex;
+    margin-left: 400px;
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 30px;
+    background-color: var(--cor2);
+    border-radius: 10px;
+    width: 110px;
+}
+
+a{
+    text-decoration: none;
+}
+
+header h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: "Bodoni Moda SC", serif;
+    text-shadow: 10px 10px 15px black;
+    font-size: 60px;
+}
+
+.titulo{
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 50px;
+    text-shadow: 10px 10px 10px black;
+    background: #333;
+    color: white;
+    padding: 5px 0;
+}
+
+
+header h2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: "Bodoni Moda SC", serif;
+    text-shadow: 10px 10px 15px black;
+    margin-bottom: 30px;
+}
+
+nav {
+    margin: 20px 0;
+  background: #333;
+    width: 100%;
+    height: 52px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 60px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 2px;
+}
+
+nav a:hover{
+    background-color: var(--cor1);
+    border-radius: 50px;
+    padding: 6px;
+}
+
+.esquerda {   
+    float: left;
+    width: 75%;
+  }
+  
+  .direita {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+  }
+
+  .cartao h2{
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 30px;
+    background-color: #333;
+    color: #fff;
+    width: 200px;
+    text-align: center;
+  }
+
+  .cartao h5{
+    margin-left: 10px;
+    font-size: 30px;
+  }
+
+  .cartao p{
+    font-size: 27px;
+    margin-top: 5px;
+  }
+
+  .fundador{
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .cartao {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .linha::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .esquerda, .direita {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  footer{
+    background-color: #333;
+    border-radius: 10px;
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+    margin: 10px;
+    max-width: 100vw;
+    height: 70px;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+/* login */
+
+#caixa{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login_form{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: var(--cor2);
+    padding: 30px 40px;
+    border-radius: 10px;
+    gap: 30px;
+    box-shadow: 5px 5px 5px black;
+    animation: 0.3s ease-in-out;
+    height: 400px;
+    width: 300px;
+    margin-top: -136px;
+}
+
+#form_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#form_header h1{
+    font-size: 40px;
+    position: relative;
+}
+
+#form_header h1::before{
+    position: absolute;
+    content: '';
+    width: 40%;
+    height: 3px;
+    background-color: var(--color-purple-50);
+    bottom: 10px;
+    border-radius: 5px;
+}
+
+#mode_icon{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#social_media{
+    display: flex;
+    justify-content: space-around;
+}
+
+#social_media img{
+    width: 35px;
+}
+
+#social_media img:hover{
+    transform: scale(1.2);
+}
+
+#inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#input_box label{
+    font-size: 14px;
+    color: black;
+}
+
+#input_field{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 3px;
+    border-bottom: 1px solid var(--color-purple-50);
+    cursor: text;
+}
+
+#input_field i{
+    font-size: 26px;
+    cursor: text;
+    color: var(--color-dark-900);
+}
+
+#input_field input{
+    border: none;
+    width: 260px;
+    height: 25px;
+    background-color: white;
+    font-size: 18px;
+    padding: 0px 5px;
+}
+
+#input_field input:focus{
+    outline: none;
+}
+
+#forgot_password a{
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--color-dark-50);
+}
+
+#forgot_password a:hover{
+    color: var(--color-purple-50);
+}
+
+#login_button{
+    border: none;
+    background: var(--cor3);
+    padding: 7px;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#login_button:hover{
+    transform: scale(1.05);
+}
+
+/* modo dark */
+.dark#login_form{
+    background-color: var(--color-dark-100);
+    color: var(--color-light-50);
+    animation: light-to-dark-background 0.3s ease-in-out;
+}
+
+.dark#login_form #input_field input, 
+.dark#login_form #input_field i{
+    color: var(--color-light-50);
+}
+
+@keyframes dark-to-light-background{
+    0%{
+        background-color: var(--color-dark-100);
+    }
+    100.0%{
+        background-color: var(--color-light-50);
+    }
+}
+
+@keyframes light-to-dark-background{
+    0%{
+        background-color: var(--color-light-50);
+    }
+    100.0%{
+        background-color: var(--color-dark-100);
+    }
+}
+
+
+
+
+
+
+
+
+/* produtos */
+div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  iframe{
+    margin-left: 50px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  contato */
+
+form{
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #5e5e5e;
+    border-radius: 8px;
+   
+}
+
+.envio_titulo{
+    text-align: center;
+    color: var(--cor4);
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 30px;
+}
+
+form fieldset{
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    padding-top: 10px;
+}
+
+form legend {
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    color: var(--cor1);
+}
+
+label{
+    display: block;
+    margin-bottom: 15px;
+    color: var(--cor5);
+    font-size: 16px;
+    
+}
+
+#foto{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+input[type="email"], select{
+    width: calc(100% - 20%);
+    padding: 8px;
+    border: 1px solid var(--cor3);
+    border-radius: 5px;
+    width: 400px;
+    height: 31px;
+}
+ 
+input[type="text"]{
+    width: calc(100% - 20%);
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid var(--cor3);
+    width: 400px;
+    height: 31px;
+}
+
+input[type="number"]{
+    width: calc(100% - 20%);
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid var(--cor3);
+    width: 400px;
+    height: 31px;
+    margin-left: 10px;
+}
+
+#titulo_cep{
+    margin-left: 10px;
+}
+
+#titulo_mensagem{
+    margin-left: 10px;
+}
+
+#estado{
+    width: 424px;
+    height: 42px;
+    margin-left: -2px;
+}
+
+#Mensagem{
+    width: 400px;
+    height: 90px;
+    margin-left: 10px;
+}
+ 
+select{
+    width: calc(100% - 23%);
+    margin-left: 23px;
+    margin-bottom: 10px;
+}
+
+#photo::-webkit-file-upload-button{
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(8, 19, 101);
+    border-radius: 5px;
+    font-size: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+#photo::-webkit-file-upload-button:hover{
+    background-color: var(--cor5);
+    border-color: var(--cor2);
+ 
+}
+.envio{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--cor5);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: -4px;
+}
+
+.envio:hover{
+    background-color: var(--cor2);
+}
+
+#result{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #dddcdc;
+    border-radius: 4px;
+    color: rgb(27, 111, 214);
+}
+
+.limpar{
+    margin-left: 0.5em;
+    color: rgb(255,255,255);
+    background-color: rgb(228, 72, 72);
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#resultados{
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 5px solid #000;
+    border-radius: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.quiz-section{
+    background-color: var(--cor2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    margin: auto;
+}
+ 
+.question{
+    margin-bottom: 20px;
+}
+ 
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+input[type="radio"]{
+    margin-right: 5px;
+    width: 25px;
+    height: 20px;
+}
+
+.quiz_buttom{
+    margin-left: 259px;
+    width: 169px;
+    padding-left: 30px;
+    color: white;
+    background-color: #aa4e26;
+}

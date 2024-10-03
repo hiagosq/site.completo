@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MAGI contato</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/Gray and Black Simple Studio Logo.png" height="100px">
+        <h1>Loja de Móveis</h1>
+        <h2>MAGI</h2>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="contato.html">Contato</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+
+    <form action="https://formsubmit.co/hiagosantanaq@gmail.com" method="POST" >
+
+    <article>
+        <fieldset>
+            <h1 class="envio_titulo">Questionário</h1>
+            <label>Nome:</label>
+                <input type="text" name="no56me" placeholder="insira seu nome" required>
+ 
+            <label>Email:</label>
+                <input type="email" name="email" placeholder="insira seu email" required>
+         </fieldset>  
+
+            <label id="titulo_cep" for="cep"> CEP</label>
+                <input class="cep" type="number" id="cep" placeholder="insira seu CEP" required>   
+
+            <label id="titulo_mensagem" for="Mensagem"> Mensagem </label>
+                <input class="Mensagem" type="text" id="Mensagem" placeholder="insira sua Mensagem" required> 
+        </fieldset>
+   
+
+        <fieldset>
+            <label for="estado">Qual é o seu estado?</label>
+            <select id="estado" name="estado" placeholder="insira seu estado" required>
+                <option value="" disabled selected>Selecione seu estado</option>
+                <option value="Acre">Acre</option>
+                <option value="Alagoas">Alagoas</option>
+                <option value="Amapá">Amapá</option>
+                <option value="Amazonas">Amazonas</option>
+                <option value="Bahia">Bahia</option>
+                <option value="Ceará">Ceará</option>
+                <option value="Distrito Federal">Distrito Federal</option>
+                <option value="Espírito Santo">Espírito Santo</option>
+                <option value="Goiás">Goiás</option>
+                <option value="Maranhão">Maranhão</option>
+                <option value="Mato Grosso">Mato Grosso</option>
+                <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                <option value="Minas Gerais">Minas Gerais</option>
+                <option value="Pará">Pará</option>
+                <option value="Paraíba">Paraíba</option>
+                <option value="Paraná">Paraná</option>
+                <option value="Pernambuco">Pernambuco</option>
+                <option value="Piauí">Piauí</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                <option value="Rondônia">Rondônia</option>
+                <option value="Roraima">Roraima</option>
+                <option value="Santa Catarina">Santa Catarina</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Sergipe">Sergipe</option>
+                <option value="Tocantins">Tocantins</option>
+            </select>
+        </fieldset>
+    </article>
+        <button class="envio" type="submit">Enviar</button>
+   </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
